@@ -29,7 +29,7 @@ static NSString *sharedSecretAccessKey = nil;
 
 @implementation ASIS3Request
 
-- (id)initWithURL:(NSURL *)newURL
+- (id)initWithURL:(nullable NSURL *)newURL
 {
 	self = [super initWithURL:newURL];
 	// After a bit of experimentation/guesswork, this number seems to reduce the chance of a 'RequestTimeout' error
